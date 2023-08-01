@@ -1,7 +1,6 @@
-import { invalidate } from '$app/navigation'
-import { PUBLIC_SUPABASE_ANON_KEY, PUBLIC_SUPABASE_URL } from '$env/static/public'
+
+import { PUBLIC_SUPABASE_URL, PUBLIC_SUPABASE_ANON_KEY } from '$env/static/public'
 import { createSupabaseLoadClient } from '@supabase/auth-helpers-sveltekit'
-import type { Config } from '@sveltejs/adapter-vercel';
 
 export const load = async ({ fetch, data, depends }) => {
     depends('supabase:auth')
@@ -20,6 +19,3 @@ export const load = async ({ fetch, data, depends }) => {
     return { supabase, session }
 }
 
-export const config: Config = {
-    runtime: 'nodejs18.x'
-};
