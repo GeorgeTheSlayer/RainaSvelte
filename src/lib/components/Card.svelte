@@ -15,18 +15,18 @@
 			'https://puvxqpxdhzllboqkucwm.supabase.co/storage/v1/object/public/Music/16356701_I%20Go_(DJ%20Koze%20Remix).mp3?t=2023-07-31T22%3A23%3A28.781Z'
 	};
 
-	const sound = new Howl({
-		src: [args.songFile],
-		html5: true,
-		preload: true,
-		onload: async () => {
-			// console.log('loaded');
-			dur = await sound.duration().toString();
-		}
-	});
+	let sound: Howl;
+
 	onMount(async () => {
-		// const metadata = await parseFile(args.songFile);
-		// console.log(metadata);
+		sound = new Howl({
+			src: [args.songFile],
+			html5: true,
+			preload: true,
+			onload: async () => {
+				// console.log('loaded');
+				dur = await sound.duration().toString();
+			}
+		});
 	});
 
 	function playAudio() {
