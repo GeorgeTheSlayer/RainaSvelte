@@ -56,3 +56,9 @@
 
 	<Player />
 </body>
+
+<style lang="postcss">
+	.square {
+		aspect-ratio: 1 / 1;
+	}
+</style>

@@ -15,6 +15,7 @@
 	"devDependencies": {
 		"@originjs/vite-plugin-commonjs": "^1.0.3",
 		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/adapter-vercel": "^3.0.3",
 		"@sveltejs/kit": "^1.20.4",
 		"@types/howler": "^2.2.7",
 		"@typescript-eslint/eslint-plugin": "^5.45.0",
@@ -40,9 +41,6 @@
 		"@supabase/auth-ui-shared": "^0.1.6",
 		"@supabase/auth-ui-svelte": "^0.2.2",
 		"@supabase/supabase-js": "^2.31.0",
-		"howler": "^2.2.3",
-		"jsmediatags": "^3.9.7",
-		"music-metadata": "^8.1.4",
-		"music-metadata-browser": "^2.5.10"
+		"howler": "^2.2.3"
 	}
 }
