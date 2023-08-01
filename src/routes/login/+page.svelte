@@ -4,6 +4,7 @@
 	import { ThemeSupa } from '@supabase/auth-ui-shared';
 
 	export let data;
+	//This is so annoying
 </script>
 
 <svelte:head>
